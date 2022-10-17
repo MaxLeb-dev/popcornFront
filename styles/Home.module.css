@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 10rem;
+  background: #a71111;
+  position: relative;
+}
+
+.popover {
+  position: absolute;
+  right: 6rem;
+  background-color: #fff;
+  border: 0px;
+  width: 100px;
+  height: 25px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.popover:hover {
+  background-color: #fb7777;
+  color: #fff;
+}
+
+.popover:not(:hover) {
+  color: black;
+}
+
+.popoverContent {
+	display: flex;
+	flex-direction: column;
+}
+
+.likedMoviesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.popoverCross {
+  cursor: pointer;
+  color: #b73d3d;
+}
+
+.logo {
+  font-family: 'Cookie', sans-serif;
+  color: #fff;
+  font-size: 7rem;
+  animation: flicker 3s infinite alternate;
+  padding-bottom: 0.5rem;
+}
+
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #CECECE,
+      0 0 19px #CECECE,
+      0 0 40px #E05859,
+      0 0 80px #E05859,
+      0 0 90px #E05859,
+      0 0 100px #E05859,
+      0 0 150px #E05859;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0 0 20 20;
+  margin: 2rem 0rem 0rem 2rem;
+}
+
+.moviesContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* max-width: 100vw; */
+	margin: 20px;
+}
+
+.poster {
+  width: 1rem;
+}

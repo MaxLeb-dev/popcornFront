@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    margin: 1.25rem;
+    /* border: 1px solid red; */
+}
+
+.poster {
+    width: 6.25rem;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.938rem 0 0.938rem;
+
+    /* border: 1px solid blue; */
+
+}
