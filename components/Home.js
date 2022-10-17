@@ -16,7 +16,7 @@ const Home = () => {
 
     // Movies list
     useEffect(() => {
-        fetch(`http://localhost:3000/movies`)
+        fetch(`https://popcorn-back.vercel.app/movies`)
             .then(response => response.json())
             .then(data => {
                 const cleanData = data.movies.map(movie => {
