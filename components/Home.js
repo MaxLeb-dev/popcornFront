@@ -1,6 +1,5 @@
 import 'antd/dist/antd.css'
 import styles from '../styles/Home.module.css'
-import Image from 'next/image'
 import Movies from './Movies'
 import ModalContainer from './ModalContainer'
 import Player from './Player'
@@ -78,20 +77,6 @@ const Home = () => {
     return (
 
         <div className={styles.main}>
-
-            {/* <div style={{
-                zIndex: -1,
-                position: 'fixed',
-                width: '100vw',
-                height: '100vh;}',
-            }}>
-                <Image
-                    src='/curtains.png'
-                    layout='fill'
-                    objectFit='cover'
-                />
-            </div> */}
-
             <div className={styles.header}>
                 <div className={styles.logo}>
                     PopCorn
