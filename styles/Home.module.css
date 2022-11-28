@@ -5,6 +5,7 @@
   width: 100vw;
   min-height: 100vh;
   margin: 0;
+  background-image: url('../public/curtains.png');
 }
 
 .header {
@@ -13,24 +14,30 @@
   justify-content: center;
   width: 100vw;
   height: 10rem;
-  background: #a71111;
-  position: relative;
+  /* background: #a71111; */
+  /* box-shadow: 0 0.5rem 1rem rgba(51, 0, 0, 0.246); */
 }
 
 .popover {
-  position: absolute;
+  position: relative;
   right: 6rem;
   background-color: #fff;
   border: 0px;
   width: 100px;
   height: 25px;
-  padding: 2px;
+  padding: 1px;
+  left: 40%;
+  margin-top: 2rem;
   cursor: pointer;
 }
 
 .popover:hover {
   background-color: #fb7777;
   color: #fff;
+}
+
+.popover:active {
+  transform: scale(.90);
 }
 
 .popover:not(:hover) {
@@ -55,11 +62,13 @@
 }
 
 .logo {
+  position: absolute;
   font-family: 'Cookie', sans-serif;
   color: #fff;
   font-size: 7rem;
   animation: flicker 3s infinite alternate;
   padding-bottom: 0.5rem;
+  margin-top: 2rem;
 }
 
 
@@ -85,6 +94,7 @@
 }
 
 .title {
+  color: #fff;
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
@@ -102,4 +112,13 @@
 
 .poster {
   width: 1rem;
+}
+
+@media only screen and (max-width: 819px) {
+  .popover {
+    position: absolute;
+    top: 10.6rem;
+    left: auto;
+    right: 2rem;
+  }
 }

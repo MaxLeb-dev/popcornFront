@@ -52,11 +52,14 @@ const Movies = (props) => {
     return (
         <div className={styles.card} >
             <img src={props.poster} alt={props.title} className={styles.poster} onClick={() => props.openModal()} />
+            <div className={styles.description}>
             <span className={styles.title} onClick={() => props.openModal()}>{props.title}</span>
             <span className={styles.vote}>{stars} {props.voteCount}</span>
             <span>{myStars} {personalNote}</span>
             <span><FaEye onClick={() => setWatched(!watched)} style={styleWatched} /> {watchedComment}</span>
             <span><FaHeart onClick={() => props.updateLikedMovies(props.title)} style={styleLiked} /> {likedComment}</span>
+            </div>
+
         </div>
     );
 };

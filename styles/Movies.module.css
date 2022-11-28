@@ -2,9 +2,11 @@
     display: flex;
     flex-direction: column;
     width: 13.75rem;
+    height: 32rem;
     margin: 1.25rem;
     transition: all ease 200ms;
-    /* border: 1px solid red; */
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 0.5rem;
 }
 
 .card:hover {
@@ -13,6 +15,7 @@
 
 .poster {
     width: 13.75rem;
+    border-radius: 0.5rem 0.5rem 0 0;
     cursor: pointer;
 }
 
@@ -25,4 +28,9 @@
 
 .overview {
     cursor: pointer;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
 }
