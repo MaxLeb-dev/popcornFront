@@ -131,4 +131,9 @@
     left: auto;
     right: 2rem;
   }
+
+  .main {
+    background-image: none;
+    background-color: #741517;
+  }
 }
