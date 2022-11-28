@@ -75,7 +75,7 @@ const Home = () => {
     })
 
     return (
-        <div className={styles.main} src="../public/curtains.png">
+        <div className={styles.main}>
             <div className={styles.header}>
                 <div className={styles.logo}>
                     PopCorn
