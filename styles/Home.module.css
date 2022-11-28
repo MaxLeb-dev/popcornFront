@@ -5,7 +5,7 @@
   width: 100vw;
   min-height: 100vh;
   margin: 0;
-  background-image: url('../public/curtains.png');
+  background-image: url('/curtains.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
